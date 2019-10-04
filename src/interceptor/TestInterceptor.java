@@ -7,7 +7,7 @@ public class TestInterceptor {
 
         public static void main(String[] args) {
 
-            HelloWorld proxy = (HelloWorld) InterceptorJdkProxy.bind(new HelloWorldImpl(), "MyInterceptor");
+            HelloWorld proxy = (HelloWorld) InterceptorJdkProxy.bind(new HelloWorldImpl(), "interceptor.MyInterceptor");
             proxy.sayHelloWorld();
         }
 

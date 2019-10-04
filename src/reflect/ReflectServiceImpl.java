@@ -13,7 +13,7 @@ public class ReflectServiceImpl {
         Object object = null;
         ReflectServiceImpl reflectService = null;
 
-        object =  Class.forName("demos.reflect.ReflectServiceImpl").newInstance();
+        object =  Class.forName("reflect.ReflectServiceImpl").newInstance();
 
         if (object instanceof ReflectServiceImpl) {
             reflectService = (ReflectServiceImpl) object;
